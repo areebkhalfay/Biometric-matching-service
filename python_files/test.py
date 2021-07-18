@@ -9,7 +9,7 @@ path5 = "/home/areebk/go/src/SAICCodingAssessment/Face Images/5.png"
 path6 = "/home/areebk/go/src/SAICCodingAssessment/Face Images/6.png"
 
 
-def test():
+def test(image, images):
     # Using face_recognition api
     first_face = face_recognition.load_image_file(path1)
     second_face = face_recognition.load_image_file(path2)
