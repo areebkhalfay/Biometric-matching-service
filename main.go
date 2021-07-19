@@ -53,6 +53,7 @@ func compareList(w http.ResponseWriter, r *http.Request) {
 		fmt.Println("Error initializing the python interpreter")
 		os.Exit(1)
 	}
+	//Path setting does not work as intended. If functional, API would be in order.
 	//1st method for setting Path
 	//dir, err := filepath.Abs(filepath.Dir(os.Args[0]))
 	//if err != nil {
@@ -68,6 +69,7 @@ func compareList(w http.ResponseWriter, r *http.Request) {
 
 	//2nd Method for setting Path
 	//python3.PySys_GetObject("path")
+	//Would need to change to directory on home machine
 	//err = python3.PySys_SetPath("/home/areebk/go/src/SAICCodingAssessment")
 	//if err != nil {
 	//	return

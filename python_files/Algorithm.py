@@ -17,8 +17,9 @@ def match_images(string1: string, string2: string) -> float:
     # Would need to change to directory on home machine
     with open('/home/areebk/go/src/SAICCodingAssessment/Test Images/2.png', 'wb') as f:
         f.write(image2)
-
+    # Would need to change to directory on home machine
     first_face = face_recognition.load_image_file("/home/areebk/go/src/SAICCodingAssessment/Test Images/1.png")
+    # Would need to change to directory on home machine
     second_face = face_recognition.load_image_file("/home/areebk/go/src/SAICCodingAssessment/Test Images/2.png")
 
     first_face_encoding = face_recognition.face_encodings(first_face)[0]
