@@ -1,11 +1,13 @@
 package models
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type ServerError struct {
 
 }
 
-func(e *ServerError) Error() string {
-	return fmt.Sprintf("Unable to decode image data as PNG.")
+func (e ServerError) Error(error string, code int) {
+	fmt.Sprintf("%d Internal Server Error %s", error, code)
 }
